@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(picture/bgpic2.jpg);
+    height: 100vh;
+    width: fit-content;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.main{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+
+input[type="text"]{
+    width: 70px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 7px 0px 0px 7px;
+    transition: 0.6s ease;
+    /* background-color: rgb(61, 61, 61); */
+    opacity: 60%;
+    text-align: right;
+    position: relative;
+}
+
+input[type="text"]:hover{
+    width: 150px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+input[type="text"]:focus{
+    transform: translateX(0px);
+    width: 150px;
+    border: 1px solid transparent;
+}
+
+.search-button{
+    color: #000;
+    float: right;
+    width: 40px;
+    height: 28px;
+    border-radius: 0px 7px 7px 0px;
+    background-color: #fff;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+
+.search-button:hover{
+    opacity: 1;
+}
+
+.dropdown{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
+    margin: auto;
+    float: right;
+}
+
+.dropdown button, .home, .gallery, .about {
+    background: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-media, .login-area{
+    position: relative;
+    border-radius: 4px;
+}
+
+.social-media ul{
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: 130px;
+    list-style-type: none ;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.6s ease;
+}
+
+.login-area ul{
+    margin-top: 10px;
+    margin-left: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    list-style-type: none ;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.6s ease;
+}
+
+.social-media li, .login-area li{
+    width: 120px;    
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
+    color: #000;
+    text-decoration: none;
+    border: transparent;
+}
+
+.social-media a, .login-area a{
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+
+.social-media li:hover, .login-area li:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+
+.social-media li a, .login-area li a{
+    text-decoration: none;
+}
+
+.social-media button:hover, .login-area button:hover, .home:hover, .gallery:hover, .about:hover{
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.social-media button:focus + ul,
+.login-area button:focus + ul{
+    opacity: 100%;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.connect-me {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-47%,-50%);
+    display: inline-block;
+}
+
+.connect-me i{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: none;
+    font-size: 30px;
+    color: #fff;
+}
